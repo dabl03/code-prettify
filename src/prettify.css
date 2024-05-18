@@ -57,6 +57,10 @@
     --color-attribute-name:#404;
     --color-attribute-value:#060;
   }
+  .kwd { font-weight: bold; }
+  .com { font-style: italic; }
+  .typ { font-weight: bold; }
+  .tag { font-weight: bold; }
 }
 /* SPAN elements with the classes below are added by prettyprint. */
 .pln {color:var(--color-plain-text);}  /* plain text */
