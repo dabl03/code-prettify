@@ -8,16 +8,12 @@
   --color-lit-value:#3387CC; /* literal - blue */
   /* punctuation, lisp open bracket, lisp close bracket */
   --color-punctuation:#fff; /* punctuation - white */
-  --color-open-bracket:#660;
-  --color-close-bracket:#660;
   /*Markup tags:*/
   --color-tag:#89bdff; /* html/xml tag    - light blue */
   --color-attribute-name:#bdb76b; /* html/xml attribute name  - khaki */
   --color-attribute-value:#65B042; /* html/xml attribute value - green */
-  /*vars and functions:*/
-  --color-declaration:#3387CC; } /* decimal - blue */
-  --color-var-name:#606;
-  --color-function:red;
+  /*vars*/
+  --color-declaration:#3387CC; /* decimal - blue */
   
   --color-plain-text: #fff; /* plaintext - white */
 } 
