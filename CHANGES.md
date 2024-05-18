@@ -10,7 +10,11 @@
    newlines.
 
 # Change Log
-
+## 18 May 2024
+ * Modify [prettify.js](./src/prettify.css)
+   I added the use of css variables.
+ * Modify [sunburst.css](./styles/sunburst.css),[sons-of-obsidian.css](./styles/sons-of-obsidian.css)
+   I only adapted it to the prettify.css modification
 ## 29 March 2007
 
  * Added [tests](https://raw.githack.com/google/code-prettify/master/tests/prettify_test.html#php)
