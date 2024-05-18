@@ -5,49 +5,26 @@
  * http://CodeTunnel.com/blog/post/71/google-code-prettify-obsidian-theme
  */
 
-.str
-{
-    color: #EC7600;
-}
-.kwd
-{
-    color: #93C763;
-}
-.com
-{
-    color: #66747B;
-}
-.typ
-{
-    color: #678CB1;
-}
-.lit
-{
-    color: #FACD22;
-}
-.pun
-{
-    color: #F1F2F3;
-}
-.pln
-{
-    color: #F1F2F3;
-}
-.tag
-{
-    color: #8AC763;
-}
-.atn
-{
-    color: #E0E2E4;
-}
-.atv
-{
-    color: #EC7600;
-}
-.dec
-{
-    color: purple;
+:root{
+  --color-str:#EC7600; /* string content */
+  --color-keyword:#93C763;
+  --color-comment:#66747B;
+  --color-type-name:#678CB1;
+  --color-lit-value:#FACD22; /* a literal value */
+  /* punctuation, lisp open bracket, lisp close bracket */
+  --color-punctuation:#F1F2F3;
+  --color-open-bracket:#660;
+  --color-close-bracket:#660;
+  /*Markup tags:*/
+  --color-tag:#8AC763;
+  --color-attribute-name:#E0E2E4;
+  --color-attribute-value:#EC7600;
+  /*vars and functions:*/
+  --color-declaration:purple;
+  --color-var-name:#606;
+  --color-function:red;
+  
+  --color-plain-text:#F1F2F3;
 }
 pre.prettyprint
 {
