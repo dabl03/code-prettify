@@ -16,38 +16,65 @@
  */
 
 /* Pretty printing styles. Used with prettify.js. */
-
-
-/* SPAN elements with the classes below are added by prettyprint. */
-.pln { color: #000 }  /* plain text */
-
-@media screen {
-  .str { color: #080 }  /* string content */
-  .kwd { color: #008 }  /* a keyword */
-  .com { color: #800 }  /* a comment */
-  .typ { color: #606 }  /* a type name */
-  .lit { color: #066 }  /* a literal value */
+/*Initialize CSS variables:*/
+:root{
+  --color-str:#080; /* string content */
+  --color-keyword:#008;
+  --color-comment:#800;
+  --color-type-name:#606;
+  --color-lit-value:#066; /* a literal value */
   /* punctuation, lisp open bracket, lisp close bracket */
-  .pun, .opn, .clo { color: #660 }
-  .tag { color: #008 }  /* a markup tag name */
-  .atn { color: #606 }  /* a markup attribute name */
-  .atv { color: #080 }  /* a markup attribute value */
-  .dec, .var { color: #606 }  /* a declaration; a variable name */
-  .fun { color: red }  /* a function name */
+  --color-punctuation:#660;
+  --color-open-bracket:#660;
+  --color-close-bracket:#660;
+  /*Markup tags:*/
+  --color-tag:#008;
+  --color-attribute-name:#606;
+  --color-attribute-value:#080;
+  /*vars and functions:*/
+  --color-declaration:#606;
+  --color-var-name:#606;
+  --color-function:red;
+  
+  --color-plain-text:#000;
 }
+
 
 /* Use higher contrast and text-weight for printable form. */
 @media print, projection {
-  .str { color: #060 }
-  .kwd { color: #006; font-weight: bold }
-  .com { color: #600; font-style: italic }
-  .typ { color: #404; font-weight: bold }
-  .lit { color: #044 }
-  .pun, .opn, .clo { color: #440 }
-  .tag { color: #006; font-weight: bold }
-  .atn { color: #404 }
-  .atv { color: #060 }
+  :root{
+    --color-str:#060;
+    --color-keyword:#006;
+    --color-comment:#600;
+    --color-type-name:#404;
+    --color-lit-value:#044;
+
+    --color-punctuation:#440;
+    --color-open-bracket:#440;
+    --color-close-bracket:#440;
+
+    --color-tag:#006;
+    --color-attribute-name:#404;
+    --color-attribute-value:#060;
+  }
 }
+/* SPAN elements with the classes below are added by prettyprint. */
+.pln {color:var(--color-plain-text);}  /* plain text */
+
+.str{color:var(--color-str);}
+.kwd{color:var(--color-keyword);}
+.com{color:var(--color-comment);}
+.typ{color:var(--color-type-name);}
+.lit{color:var(--color-lit-value);}
+.pun{color:var(--color-punctuation);}
+.opn{color:var(--color-open-bracket);}
+.clo{color:var(--color-close-bracket);}
+.tag{color:var(--color-tag);}
+.atn{color:var(--color-attribute-name);}
+.atv{color:var(--color-attribute-value);}
+.dec{color:var(--color-declaration);}
+.var{color:var(--color-var-name);}
+.fun{color:var(--color-function);}
 
 /* Put a border around prettyprinted code snippets. */
 pre.prettyprint { padding: 2px; border: 1px solid #888 }
