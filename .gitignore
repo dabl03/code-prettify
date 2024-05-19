@@ -6,6 +6,12 @@
 # package managers
 /node_modules/
 /bower_components/
+
+#Compiler:
+/loader/
+/loader/*.json
+/loader/skins/
+
 npm-debug.log
 .bower.json
 log-console.sh
