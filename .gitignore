@@ -8,7 +8,7 @@
 /bower_components/
 npm-debug.log
 .bower.json
-
+log-console.sh
 # generated files
 #/src/prettify.js
 #/src/run_prettify.js

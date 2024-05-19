@@ -159,7 +159,7 @@ var prettyPrintOne;
  * {@code class=prettyprint} and prettify them.
  *
  * @param {Function} opt_whenDone called when prettifying is done.
- * @param {HTMLElement|HTMLDocument} opt_root an element or document
+ * @param {HTMLElement} opt_root an element or document
  *   containing all the elements to pretty print.
  *   Defaults to {@code document.body}.
  */

@@ -18,6 +18,14 @@ An embeddable script that makes source-code snippets in HTML prettier.
   and http://stackoverflow.com/
 
 [See an example][2].
+## Build
+
+We use grunt js to compile, so you must:
+```bash
+> npm install
+> npm install -g grunt-cli
+> grunt
+```
 
 ## Setup
 
